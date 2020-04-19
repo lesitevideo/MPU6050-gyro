@@ -43,10 +43,12 @@ if ( gyro ) {
 ### Hardware setup
 
 This driver reads MPU-6050 datas over I2C.
-Plug VIN to 3.3V ( pin #1 ), GND to GROUND  ( pin #6 ), SDA to SDA ( pin #3 / GPIO 2 ), SCL to SCL ( pin #5 / GPIO 3 ).
-through D by connecting the pins for GND, 3.3V, SDA, and SCL. The wiring
-diagram below shows how this works with the GY-521 breakout board.
+Plug VIN to 3.3V ( pin #1 ),
+GND to GROUND  ( pin #6 ),
+SDA to SDA ( pin #3 / GPIO 2 ),
+SCL to SCL ( pin #5 / GPIO 3 ).
 
+![RPI Wiring Diagram](https://raw.githubusercontent.com/lesitevideo/MPU6050-gyro/master/wiring.jpg)
 
 ## Available Methods
 
