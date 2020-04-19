@@ -16,9 +16,6 @@
   "description": "Reads roll and pitch from a mpu6050",
   "homepage": "https://github.com/lesitevideo/MPU6050-gyro#readme",
   "main": "index.js",
-  "scripts": {
-    "test": "node test.js"
-  },
   "engines": {
     "node": ">=4.0.0"
   },
@@ -28,6 +25,9 @@
     "async": "^3.2.0",
     "i2c-bus": "^5.1.0"
   },
-  "bundleDependencies": false,
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
   "deprecated": false
 }
