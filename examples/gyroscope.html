@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<title>Socket.IO telemetry</title>
+	<link rel="stylesheet" type="text/css" href="css/flightindicators.css" >
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		font: 13px Helvetica, Arial;
+	}
+	</style>
+</head>
+<body>
+	
+    <div class="examples">
+        <div>
+            <span id="attitude"></span>
+        </div>
+    </div>
+	
+<ul id="messages"></ul>
+	<script src="js/socket.io.js"></script> 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.flightindicators.min.js"></script>
+<script>
+	
+    $(function () {
+		
+		// configure component
+		var attitude = $.flightIndicator('#attitude', 'attitude', {
+			roll:0,
+			pitch:0,
+			size:400,
+			showBox : true
+		});
+		
+		// socket
+        var socket = io();
+
+        socket.on('telemetrie', function(msg){
+            attitude.setRoll( msg.roll );
+            attitude.setPitch( msg.pitch );
+            //console.log(msg);
+        });
+
+    });
+
+	
+</script>	
+	
+</body>
+</html>
