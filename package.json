@@ -12,17 +12,22 @@
     "pitch",
     "IMU"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Reads roll and pitch from a mpu6050",
   "homepage": "https://github.com/lesitevideo/MPU6050-gyro#readme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "author": "kinoki.fr",
   "license": "MIT",
   "dependencies": {
     "async": "^3.2.0",
     "i2c-bus": "^5.1.0"
-  }
+  },
+  "bundleDependencies": false,
+  "deprecated": false
 }
