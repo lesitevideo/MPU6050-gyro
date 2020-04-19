@@ -12,7 +12,7 @@
     "pitch",
     "IMU"
   ],
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "reads roll and pitch from a mpu6050",
   "main": "index.js",
   "scripts": {

@@ -14,7 +14,7 @@ npm install mpu6050-gyro
 ```js
 var gyro = require("mpu6050-gyro");
 
-var address = 0x68; //MPU6050 addess
+var address = 0x68; //MPU6050 address
 var bus = 1; //i2c bus used
 
 var gyro = new gyro( bus,address );
@@ -42,14 +42,10 @@ if ( gyro ) {
 
 ### Hardware setup
 
-This driver reads MPU-6050 datas over I2C.
-
-Plug VIN to 3.3V ( pin #1 ),
-
-GND to GROUND  ( pin #6 ),
-
-SDA to SDA ( pin #3 / GPIO 2 ),
-
+This driver reads MPU-6050 datas over I2C.<br/>
+Plug VCC to 3.3V ( pin #1 ),<br/>
+GND to GROUND  ( pin #6 ),<br/>
+SDA to SDA ( pin #3 / GPIO 2 ),<br/>
 SCL to SCL ( pin #5 / GPIO 3 ).
 
 ![RPI Wiring Diagram](https://raw.githubusercontent.com/lesitevideo/MPU6050-gyro/master/wiring.jpg)
