@@ -3,8 +3,16 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lesitevideo/MPU6050-gyro.git"
-  },	
-  "version": "1.0.0",
+  },
+  "keywords": [
+    "MPU-6050",
+    "MPU6050",
+    "Raspberry-pi",
+    "roll",
+    "pitch",
+    "IMU"
+  ],
+  "version": "1.0.3",
   "description": "reads roll and pitch from a mpu6050",
   "main": "index.js",
   "scripts": {
