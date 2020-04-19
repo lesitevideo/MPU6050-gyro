@@ -43,9 +43,13 @@ if ( gyro ) {
 ### Hardware setup
 
 This driver reads MPU-6050 datas over I2C.
+
 Plug VIN to 3.3V ( pin #1 ),
+
 GND to GROUND  ( pin #6 ),
+
 SDA to SDA ( pin #3 / GPIO 2 ),
+
 SCL to SCL ( pin #5 / GPIO 3 ).
 
 ![RPI Wiring Diagram](https://raw.githubusercontent.com/lesitevideo/MPU6050-gyro/master/wiring.jpg)
@@ -70,3 +74,7 @@ Pull requests welcome.
 ## License
 
 MIT
+
+##
+
+[![https://nodei.co/npm/mpu6050-gyro.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/mpu6050-gyro.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mpu6050-gyro)
