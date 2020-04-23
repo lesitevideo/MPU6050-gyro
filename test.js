@@ -3,8 +3,13 @@ var gyro = require("./index.js");
 var address = 0x68; //MPU6050 addess
 var bus = 1; //i2c bus used
 
+try {
+        var gyro = new gyro( bus,address );
+    } catch(e) {
+        console.log("erreur");
+        // [Error: Uh oh!]
+    }
 
-var gyro = new gyro( bus,address );
 
 async function update_telemetry() {
 	
