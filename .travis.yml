@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "8"
+  - "10"
+cache:
+  directories:
+    node_modules
+install: npm install
+before_script:
+  - npm install async -g
+  - npm install i2c-bus -g
+matrix:
+  fast_finish: true
