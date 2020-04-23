@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lesitevideo/MPU6050-gyro.svg?branch=master)](https://travis-ci.org/lesitevideo/MPU6050-gyro)
+
 # mpu6050-gyro
 
 A node driver for the MPU-6050 IMU. Tested and working on Raspberry pi.
