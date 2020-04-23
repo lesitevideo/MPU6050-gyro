@@ -7,8 +7,6 @@ cache:
     node_modules
 install: npm install
 before_script:
-  - sudo apt-get install -y i2c-tools
-  - sudo i2cdetect -y 1
   - npm install async -g
   - npm install i2c-bus -g
 matrix:
