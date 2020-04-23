@@ -25,7 +25,6 @@ function gyroscope( i2cbus, mpuaddress ) {
 		return new gyroscope(i2cbus, mpuaddress);
 	}
 	this.address = mpuaddress;
-	if( i2c.openSync(i2cbus) ){
 		this.bus = i2c.openSync(i2cbus);
 	
 		// On réveille le capteur
@@ -38,10 +37,7 @@ function gyroscope( i2cbus, mpuaddress ) {
 		this.bus.writeByteSync(this.address, GYRO_CONFIG, 24);
 		//Write to interrupt enable register
 		this.bus.writeByteSync(this.address, INT_ENABLE, 1);
-	} else {
-		console.log("I2C error. Check your I2C activation & settings.");
-		return false;
-	}
+	
 }
 
 //i2c read mpu6050 raw data
