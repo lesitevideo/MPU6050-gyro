@@ -24,9 +24,12 @@ function gyroscope( i2cbus, mpuaddress ) {
 	if (!(this instanceof gyroscope)) {
 		return new gyroscope(i2cbus, mpuaddress);
 	}
-	this.bus = i2c.openSync(i2cbus);
 	this.address = mpuaddress;
-	
+	if( i2c.openSync(i2cbus) ){
+		this.bus = i2c.openSync(i2cbus);
+	} else {
+		console.log("I2C error. Check your I2C activation & settings.);
+	}
 	// On réveille le capteur
 	this.bus.writeByteSync(this.address, PWR_MGMT_1, 0);
 	//write to sample rate register
